@@ -46,7 +46,7 @@ const EStall = () => {
         <div className="products_container">
           {products.map((product) => {
             return (
-              <div className="product_card">
+              <div className="product_card" key={product.id}>
                 {product.discount === 20 ? (
                   <div className="product_badge">20% OFF</div>
                 ) : product.discount === 50 ? (

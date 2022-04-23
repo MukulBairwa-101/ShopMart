@@ -8,12 +8,12 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const appContext = useContext(AppContext);
-  const [count, setCount] = appContext.value5;
-  const [category, setCategory] = appContext.value2;
-  const [productCollection, setProductCollection] = useState(
+  const [count] = appContext.value5;
+  const [ setCategory] = appContext.value2;
+  const [productCollection] = useState(
     appContext.value1[0].products
   );
-  const [wishlistCount, setWishlistCount] = appContext.value8;
+  const [wishlistCount] = appContext.value8;
 
   const FixedBottomNavigation = () => {
     const [valueBottom, setValueBottom] = useState(0);

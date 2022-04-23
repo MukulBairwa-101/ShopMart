@@ -156,7 +156,7 @@ const Category = () => {
         <div className="products_container category_product_container ">
           {category.map((product) => {
             return (
-              <div className="product_card category_product_card ">
+              <div className="product_card category_product_card " key ={product.id}>
                 {product.discount === 20 ? (
                   <div className="product_badge">20% OFF</div>
                 ) : product.discount === 50 ? (
