@@ -1,0 +1,12 @@
+.footer_container{
+    background-color: #242B2E;
+    padding:20px;
+
+}
+
+@media screen and (max-width:980px){
+    .footer_container{
+     display:none;
+    
+    }
+}
