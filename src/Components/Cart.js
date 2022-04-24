@@ -196,7 +196,7 @@ const Cart = () => {
                 >
                   Have a Promocode ?
                 </span>
-                <button className="btn_size btn_cart">Checkout</button>
+                <button className="btn_size btn_cart" onClick={() => handleCheckout()}>Checkout</button>
               </div>
             </div>
           ) : (
